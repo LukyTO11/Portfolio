@@ -531,21 +531,21 @@ footer {
     .grid-item3,
     .grid-item4,
     .grid-item5 {
-        border-radius: 10px;
+        border-radius: 0px;
         font-size: 30px;
         text-align: center;
         box-shadow: none;
     }
 
     .grid-item1 {
-        background: url(./img/img_bendejun.png) no-repeat center;
+        background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 1/7;
     }
 
     .grid-item1:hover {
-        background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
+        background: url(./img/img_bendejun.png) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 1/7;
@@ -553,32 +553,34 @@ footer {
 
 
     .grid-item2 {
-        background: url(./img/img_trame.png) no-repeat center;
-        background-size: 100%;
-        grid-column: 1;
-        grid-row: 7/14;
-    }
-
-    .grid-item2:hover {
         background: url(./img/anim_trames.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 7/14;
     }
 
+    .grid-item2:hover {
+        background: url(./img/img_trame.png) no-repeat center;
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 7/14;
+    }
+
+
     .grid-item3 {
-        background: url(./img/img_festival.gif) no-repeat center;
+        background: url(./img/anim_festival.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 14/21;
     }
 
     .grid-item3:hover {
-        background: url(./img/anim_festival.gif) no-repeat center;
+        background: url(./img/img_festival.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 14/21;
     }
+
 
     .grid-item4 {
         background: url(./img/ovni.png) no-repeat center;
@@ -593,6 +595,36 @@ footer {
         grid-column: 1;
         grid-row: 28/35;
     }
+
+    .grid-item5:hover {
+        background: url(./img/alone.png) no-repeat top;
+        background-size: 100%;
+        grid-column: 1;
+        grid-row: 28/35;
+    }
+
+
+    .link-work {
+        text-decoration: none;
+        padding: 0;
+        width: 300px;
+        height: auto;
+        font-family: 'GT America Mono', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        border: 2px solid white;
+        border-radius: 999px;
+        background-color: white;
+        color: black;
+        transition: 400ms ease-out;
+    }
+
+    .link-work:hover {
+        color: black;
+        background-color: white;
+        border: 2px solid white;
+    }
+
 
     .services-title {
         margin: 0;
