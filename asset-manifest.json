@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.cbffaa7e.css",
+    "main.js": "/Portfolio/static/js/main.d5894661.js",
+    "static/media/anim_festival.gif": "/Portfolio/static/media/anim_festival.7000a714e426ecb8d339.gif",
+    "static/media/cdv_bendejun_anim.gif": "/Portfolio/static/media/cdv_bendejun_anim.fff3b09a095e7dae1ee4.gif",
+    "static/media/ovni.png": "/Portfolio/static/media/ovni.eee1433e7f4ef8a2e689.png",
+    "static/media/alone.png": "/Portfolio/static/media/alone.ec4fed3a9f944a4f78fb.png",
+    "static/media/chara-design.jpg": "/Portfolio/static/media/chara-design.eb436586865e98d9f4e1.jpg",
+    "static/media/illustration.jpg": "/Portfolio/static/media/illustration.6bedab23b1d1c4519f52.jpg",
+    "static/media/development.jpg": "/Portfolio/static/media/development.66d29cb122b34dcf22b3.jpg",
+    "static/media/lukylando2.png": "/Portfolio/static/media/lukylando2.8f6dbb1ca322af001b64.png",
+    "static/media/content-creator.jpg": "/Portfolio/static/media/content-creator.b7aaeb07de5708206f52.jpg",
+    "static/media/anim_trames.gif": "/Portfolio/static/media/anim_trames.3d41490b8cc12d0d8c40.gif",
+    "static/media/img_festival.gif": "/Portfolio/static/media/img_festival.ce7a49fa10f23f4853d3.gif",
+    "static/media/concept-art.jpg": "/Portfolio/static/media/concept-art.462a4a7d0e9310486c97.jpg",
+    "static/media/animation.jpg": "/Portfolio/static/media/animation.1088a4d6e2edd907870a.jpg",
+    "static/media/img_bendejun.png": "/Portfolio/static/media/img_bendejun.72e380cbb15a417f3cf8.png",
+    "static/media/iconCat.png": "/Portfolio/static/media/iconCat.ea6d8a21273f4ec979cd.png",
+    "static/media/icon-catv2.png": "/Portfolio/static/media/icon-catv2.834ad62fd5b16a553a45.png",
+    "static/media/layer2.png": "/Portfolio/static/media/layer2.f6f0b6ebb4ddf10a0a4e.png",
+    "static/media/img_trame.png": "/Portfolio/static/media/img_trame.7f0b7448ef4601db1919.png",
+    "static/media/revicons.eot": "/Portfolio/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/Portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/Portfolio/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/Portfolio/index.html",
+    "main.cbffaa7e.css.map": "/Portfolio/static/css/main.cbffaa7e.css.map",
+    "main.d5894661.js.map": "/Portfolio/static/js/main.d5894661.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cbffaa7e.css",
+    "static/js/main.d5894661.js"
+  ]
+}
