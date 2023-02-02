@@ -35,8 +35,8 @@ nav {
 .background {
     min-height: 100vh;
     max-width: 100%;
-    /* background-image: url(./image/city.jpg); */
-    background-image: url(./img/lukylando2.png);
+    background-image: url(./image/city.jpg);
+    /* background-image: url(./img/lukylando2.png); */
     background-size: cover;
     background-attachment: fixed;
     display: flex;
