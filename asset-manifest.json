@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.b428bdf9.css",
+    "main.css": "/Portfolio/static/css/main.a2bcdb3f.css",
     "main.js": "/Portfolio/static/js/main.d5894661.js",
     "static/media/anim_festival.gif": "/Portfolio/static/media/anim_festival.7000a714e426ecb8d339.gif",
+    "static/media/test.gif": "/Portfolio/static/media/test.fd16b8c8417fd4c2552b.gif",
     "static/media/cdv_bendejun_anim.gif": "/Portfolio/static/media/cdv_bendejun_anim.fff3b09a095e7dae1ee4.gif",
     "static/media/ovni.png": "/Portfolio/static/media/ovni.eee1433e7f4ef8a2e689.png",
     "static/media/alone.png": "/Portfolio/static/media/alone.ec4fed3a9f944a4f78fb.png",
     "static/media/chara-design.jpg": "/Portfolio/static/media/chara-design.eb436586865e98d9f4e1.jpg",
     "static/media/illustration.jpg": "/Portfolio/static/media/illustration.6bedab23b1d1c4519f52.jpg",
     "static/media/development.jpg": "/Portfolio/static/media/development.66d29cb122b34dcf22b3.jpg",
-    "static/media/lukylando2.png": "/Portfolio/static/media/lukylando2.8f6dbb1ca322af001b64.png",
     "static/media/content-creator.jpg": "/Portfolio/static/media/content-creator.b7aaeb07de5708206f52.jpg",
     "static/media/anim_trames.gif": "/Portfolio/static/media/anim_trames.3d41490b8cc12d0d8c40.gif",
     "static/media/img_festival.gif": "/Portfolio/static/media/img_festival.ce7a49fa10f23f4853d3.gif",
@@ -24,11 +24,11 @@
     "static/media/revicons.ttf": "/Portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/Portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/Portfolio/index.html",
-    "main.b428bdf9.css.map": "/Portfolio/static/css/main.b428bdf9.css.map",
+    "main.a2bcdb3f.css.map": "/Portfolio/static/css/main.a2bcdb3f.css.map",
     "main.d5894661.js.map": "/Portfolio/static/js/main.d5894661.js.map"
   },
   "entrypoints": [
-    "static/css/main.b428bdf9.css",
+    "static/css/main.a2bcdb3f.css",
     "static/js/main.d5894661.js"
   ]
 }
