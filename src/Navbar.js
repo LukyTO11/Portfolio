@@ -1,4 +1,5 @@
 import { React } from "react"
+import videoBg from "./img/video.mp4"
 
 export default function Navbar() {
     const body = document.body
@@ -25,6 +26,7 @@ export default function Navbar() {
     })
     return (
         <div className="background">
+            {/* <video src={videoBg} className="background-video" autoPlay loop muted/> */}
             <nav className="navbar">
                 <a href="#"><img src={require("./image/icon-catv2.png")} alt="" className="nav-icon" /></a>
                 <ul className="navbar-center">

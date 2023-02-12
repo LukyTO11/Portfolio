@@ -42,6 +42,11 @@ nav {
     width: 100%;
 }
 
+video {
+    width: 100%;
+    height: 95%;
+}
+
 .d-l_mode {
     margin-top: 10px;
     width: 80px;
