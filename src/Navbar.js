@@ -1,4 +1,5 @@
 import { React } from "react"
+import ReactPlayer from 'react-player'
 import videoBg from "./img/video.mp4"
 
 export default function Navbar() {
@@ -26,7 +27,6 @@ export default function Navbar() {
     })
     return (
         <div className="background">
-            {/* <video src={videoBg} className="background-video" autoPlay loop muted/> */}
             <nav className="navbar">
                 <a href="#"><img src={require("./image/icon-catv2.png")} alt="" className="nav-icon" /></a>
                 <ul className="navbar-center">
@@ -37,6 +37,6 @@ export default function Navbar() {
                 </ul>
                 <a href="#"><img src={require("./image/d-l.png")} alt="" className="d-l_mode" /></a>
             </nav>
-        </div>
+        </div >
     )
 }
