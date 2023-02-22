@@ -4,7 +4,7 @@ export default function About() {
     
     return (
         <div className="about">
-            {/* <img src={require("./img/grid3.jpg")} className="img-bg"/> */}
+            {/* <img src={require("./img/anim-website_test.gif")} className="about-gif"/> */}
             <h1 className="about-title">I'm Luky.</h1>
             <p className="about-text">
                 Hello, my nickname is Luky, a Freelance Illustrator/Animator
