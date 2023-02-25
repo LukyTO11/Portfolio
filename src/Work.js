@@ -1,9 +1,9 @@
 import React from "react"
 
 
-export default function Work() {
+export default function Work(props) {
     return (
-        <main className="main">
+        <main id="main" className={props.darkMode ? "dark" : ""}>
             <h1 className="main-title">MY WORKS</h1>
             <div className="grid-container">
                 <div className="grid-item1"></div>
