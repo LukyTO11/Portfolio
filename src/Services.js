@@ -1,8 +1,8 @@
 import React from "react"
 
-export default function Services() {
+export default function Services(props) {
     return(
-        <div className="services">
+        <div id="services" className={props.darkMode ? "dark" : ""}>
             <h1 className="services-title">Services</h1>
         </div>
     )
