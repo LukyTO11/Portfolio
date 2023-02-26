@@ -60,7 +60,7 @@ export default function App() {
             <Services darkMode={darkMode}/>
             <Carousel
                 responsive={responsive}
-                draggable={true}
+                draggable={false}
                 autoPlay={true}
                 infinite={true}
                 showDots={true}

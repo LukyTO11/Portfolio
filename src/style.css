@@ -42,10 +42,16 @@ nav {
     padding: 38px 8%;
 }
 
+.background li {
+    list-style: none;
+    cursor: pointer;
+}
+
 .nav-icon {
     display: flex;
     align-items: left;
     width: 200px;
+    text-decoration: none;
 }
 
 #navbar {
@@ -107,11 +113,11 @@ nav {
     height: 40px;
     text-align: center;
     color: #000000;
-  }
-  
-  #shop:hover.show-text::before {
+}
+
+#shop:hover.show-text::before {
     opacity: 1;
-  }
+}
 
 .navbar-center li:hover {
     opacity: 100%;
@@ -675,11 +681,6 @@ footer {
         padding: 38px 8%;
         transition: all 0.3s ease-in-out;
         scroll-behavior: smooth;
-    }
-
-    nav.dark {
-        background-color: #333;
-        transition: background-color 0.3s ease-in-out;
     }
 
     .d-l_mode {
