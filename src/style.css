@@ -326,6 +326,7 @@ button {
 .btn-send:hover {
     transform: scale(1.01);
     padding-left: 40px;
+    box-shadow: 0 0 4px rgba(32, 39, 241, 0.5);
 }
 
 
