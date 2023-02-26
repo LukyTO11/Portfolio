@@ -12,7 +12,7 @@ export default function Contact(props) {
         setShowModal(false)
     }
     return (
-        <footer id="footer" className={props.darkMode ? "dark" : ""}>
+        <footer id="contact-section" className={props.darkMode ? "dark" : ""}>
             <h1 className="footer-title"> Interested to collaborate together ? </h1>
             <div className="container-btn">
                 <button

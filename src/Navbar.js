@@ -31,12 +31,12 @@ export default function Navbar(props) {
             <nav id="navbar" className={props.darkMode ? "dark" : ""}>
                 <a href="#"><img src={require("./image/icon-catv2.png")} alt="" className="nav-icon" /></a>
                 <ul className="navbar-center">
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Works</li></a>
-                    <a href="#"><li>Contact</li></a>
+                    <a href="#about-section"><li>About</li></a>
+                    <a href="#main"><li>Works</li></a>
+                    <a href="#contact-section"><li>Contact</li></a>
                     <a href="#" className="nav-shop"><li>Shop</li></a>
                 </ul>
-                <div className="toggler" onClick={() => {props.toggleDarkMode(); props.toggleBodyClass()}}>
+                <div className="toggler" onClick={() => { props.toggleDarkMode(); props.toggleBodyClass() }}>
                     <FontAwesomeIcon icon={faMoon} className="fa-moon" />
                     <FontAwesomeIcon icon={faSun} className="fa-sun" />
                     <div className="ball"></div>

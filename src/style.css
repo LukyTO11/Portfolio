@@ -24,7 +24,7 @@ footer.dark .footer-title,
 footer.dark .info-rights,
 footer.dark .info-text,
 footer.dark .info-title {
-    color: whitesmoke;
+    color: black;
 }
 
 
@@ -162,21 +162,43 @@ ul {
 }
 
 
+/* Link Navbar */
 
+.about-enter {
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.about-enter-active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 500ms ease-in-out;
+}
+
+.about-exit {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.about-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 500ms ease-in-out;
+}
 
 /* Background Layer */
 
 body {
     width: 100%;
     height: 100%;
-    background: url(./img/layer3.png);
+    background: url(./img/layer4.png);
 }
 
 body.dark {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background: url(./img/layer4.png);
+    background: url(./img/layer3.png);
 }
 
 /* About */
@@ -185,7 +207,7 @@ body.dark {
 .about-text {
     padding-left: 120px;
     margin-left: 200px;
-    color: black;
+    color: whitesmoke;
 }
 
 
@@ -346,7 +368,7 @@ main {
     text-transform: uppercase;
     text-align: center;
     line-height: 121px;
-    color: black;
+    color: whitesmoke;
 }
 
 .grid-container {
@@ -472,7 +494,7 @@ main {
     margin-top: 50rem;
     font-size: 200px;
     text-align: center;
-    color: black;
+    color: whitesmoke;
 }
 
 
@@ -498,19 +520,6 @@ main {
     border-radius: 10px;
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.25);
 }
-
-
-/* .card-list {
-    gap: 3rem;
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 26%;
-
-    overflow-x: scroll;
-    scroll-snap-type: inline mandatory;
-    scroll-padding-inline: 10rem; 
-} */
-
 
 .card-image {
     width: 600px;
@@ -563,7 +572,7 @@ footer {
     font-weight: 700;
     text-align: center;
     line-height: 60px;
-    color: black;
+    color: whitesmoke;
 }
 
 .btn-contactTwo {
@@ -607,21 +616,21 @@ footer {
     font-size: 24px;
     line-height: 30px;
     width: 265px;
-    color: black;
+    color: whitesmoke;
 }
 
 .info-title {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-    color: black;
+    color: whitesmoke;
 }
 
 .info-text {
     font-weight: 400;
     font-size: 24px;
     line-height: 30px;
-    color: black;
+    color: whitesmoke;
 }
 
 
