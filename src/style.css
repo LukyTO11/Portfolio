@@ -76,7 +76,7 @@ nav {
     display: flex;
 }
 
-.navbar-center a {
+.navbar-center li {
     color: whitesmoke;
     opacity: 60%;
     font-style: italic;
@@ -88,9 +88,32 @@ nav {
     padding: 5px 0;
     margin: 0px 30px;
     transition: 200ms ease-in;
+    cursor: pointer;
 }
 
-.navbar-center a:hover {
+
+#shop.show-text::before {
+    content: "Soon";
+    display: block;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    position: absolute;
+    margin-left: 70px;
+    padding-top: 8px;
+    background-color: white;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    color: #000000;
+  }
+  
+  #shop:hover.show-text::before {
+    opacity: 1;
+  }
+
+.navbar-center li:hover {
     opacity: 100%;
 }
 
@@ -650,6 +673,13 @@ footer {
         align-items: top;
         justify-content: space-between;
         padding: 38px 8%;
+        transition: all 0.3s ease-in-out;
+        scroll-behavior: smooth;
+    }
+
+    nav.dark {
+        background-color: #333;
+        transition: background-color 0.3s ease-in-out;
     }
 
     .d-l_mode {
@@ -664,6 +694,9 @@ footer {
     .navbar-center {
         display: none;
     }
+
+
+    /* About */
 
     .about h1 {
         font-size: 40px;
@@ -860,6 +893,8 @@ footer {
     .react-multi-carousel-dot-list {
         visibility: visible;
     }
+
+    /* Contact */
 
     .info {
         width: 100%;
