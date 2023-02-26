@@ -2,10 +2,8 @@ import React, { useState, useEffect, useRef } from "react"
 import Typed from "typed.js"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { useForm } from 'react-hook-form'
 
 export default function About(props) {
-    /* const { Submit, register, formState: { errors } } = useForm */
 
     const [showModal, setShowModal] = useState(false)
     const [email, setEmail] = useState("")
