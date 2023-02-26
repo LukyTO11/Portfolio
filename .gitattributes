@@ -1,11 +1,11 @@
-src/ filter=lfs diff=lfs merge=lfs -text
+node_modules/.cache/default-development/10.pack filter=lfs diff=lfs merge=lfs -text
+node_modules/.cache/default-development/17.pack,node_modules/.cache/default-development/13.pack,node_modules/.cache/default-development/7.pack,src/img/test2.gif,node_modules/.cache/default-development/0.pack,node_modules/.cache/default-development/52.pack filter=lfs diff=lfs merge=lfs -text
 
 node_modules/.cache/default-development/17.pack filter=lfs diff=lfs merge=lfs -text
 node_modules/.cache/default-development/13.pack filter=lfs diff=lfs merge=lfs -text
 src/img/test2.gif filter=lfs diff=lfs merge=lfs -text
 node_modules/.cache/default-development/0.pack filter=lfs diff=lfs merge=lfs -text
 node_modules/.cache/default-development/52.pack filter=lfs diff=lfs merge=lfs -text
-node_modules/.cache/default-development/10.pack filter=lfs diff=lfs merge=lfs -text
 node_modules/.cache/default-development/7.pack filter=lfs diff=lfs merge=lfs -text
 *.pack filter=lfs diff=lfs merge=lfs -text
 node_modules/.cache/default-development filter=lfs diff=lfs merge=lfs -text
