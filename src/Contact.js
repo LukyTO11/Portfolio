@@ -1,8 +1,9 @@
 import React, { useState } from "react"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact(props) {
     const [showModal, setShowModal] = useState(false)
-    const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
@@ -11,7 +12,7 @@ export default function Contact(props) {
         setShowModal(false)
     }
     return (
-        <footer id="footer" className={props.darkMode ? "dark" : ""}>
+        <footer id="contact-section" className={props.darkMode ? "dark" : ""}>
             <h1 className="footer-title"> Interested to collaborate together ? </h1>
             <div className="container-btn">
                 <button
@@ -23,25 +24,21 @@ export default function Contact(props) {
             {showModal && (
                 <div className="modal">
                     <div className="modal-content">
-                        <h2>Contactez-moi</h2>
+                        <h2>Contact me</h2>
                         <form onSubmit={handleSubmit}>
                             <label>
-                                Nom :
-                                <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
+                                <input className="label-email" placeholder="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
                             </label>
                             <label>
-                                E-mail :
-                                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                                <textarea className="label-message" placeholder="message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
                             </label>
-                            <label>
-                                Message :
-                                <textarea value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-                            </label>
-                            <button type="submit">Envoyer</button>
                         </form>
-                        <button className="close-button" onClick={() => setShowModal(false)}>
-                            Fermer
-                        </button>
+                        <div className="btn-send" onClick={() => setShowModal(false)}>
+                            <FontAwesomeIcon icon={faPaperPlane} className="fa-paper" />
+                        </div>
+                        <div className="close-icon" onClick={() => setShowModal(false)}>
+                            <FontAwesomeIcon icon={faXmark} className="fa-xmark" />
+                        </div>
                     </div>
                 </div>
             )}

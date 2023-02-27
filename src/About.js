@@ -2,10 +2,8 @@ import React, { useState, useEffect, useRef } from "react"
 import Typed from "typed.js"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { useForm } from 'react-hook-form'
 
 export default function About(props) {
-    /* const { Submit, register, formState: { errors } } = useForm */
 
     const [showModal, setShowModal] = useState(false)
     const [email, setEmail] = useState("")
@@ -32,7 +30,8 @@ export default function About(props) {
 
     return (
         <div className={props.darkMode ? "dark" : ""}>
-            <div className="about">
+
+            <div className="about" id="about-section">
                 <h1 className="about-title">I'm {" "}
                     <span ref={typedElement} className="about-typed"></span>
                 </h1>

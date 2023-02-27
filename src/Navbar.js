@@ -4,6 +4,11 @@ import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar(props) {
 
+    function handleMouseOver() {
+        const shop = document.getElementById('shop');
+        shop.classList.add('show-text');
+    }
+
     const body = document.body
     let lastScroll = 0
 
@@ -26,17 +31,24 @@ export default function Navbar(props) {
 
         lastScroll = currentScroll
     })
+
+    const scrollToSection = (sectionId) => {
+        document.querySelector(sectionId).scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
+
     return (
-        <div className="background">
+        <div className="background" id="background">
             <nav id="navbar" className={props.darkMode ? "dark" : ""}>
-                <a href="#"><img src={require("./image/icon-catv2.png")} alt="" className="nav-icon" /></a>
+                <li onClick={() => scrollToSection('#background')}><img src={require("./image/icon-catv2.png")} alt="" className="nav-icon" /></li>
                 <ul className="navbar-center">
-                    <a href="#"><li>About</li></a>
-                    <a href="#"><li>Works</li></a>
-                    <a href="#"><li>Contact</li></a>
-                    <a href="#" className="nav-shop"><li>Shop</li></a>
+                    <li onClick={() => scrollToSection('#about-section')}>About</li>
+                    <li onClick={() => scrollToSection('#main')}>Works</li>
+                    <li onClick={() => scrollToSection('#contact-section')}>Contact</li>
+                    <li id="shop" onMouseOver={() => handleMouseOver()}>Shop</li>
                 </ul>
-                <div className="toggler" onClick={() => {props.toggleDarkMode(); props.toggleBodyClass()}}>
+                <div className="toggler" onClick={() => { props.toggleDarkMode(); props.toggleBodyClass() }}>
                     <FontAwesomeIcon icon={faMoon} className="fa-moon" />
                     <FontAwesomeIcon icon={faSun} className="fa-sun" />
                     <div className="ball"></div>
