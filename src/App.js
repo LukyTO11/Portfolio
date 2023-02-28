@@ -12,6 +12,16 @@ import "react-multi-carousel/lib/styles.css";
 
 export default function App() {
 
+    const [darkMode, setDarkMode] = React.useState(true)
+
+    function toggleDarkMode() {
+        setDarkMode(prevMode => !prevMode)
+    }
+
+    function toggleBodyClass() {
+        document.body.classList.toggle("dark")
+    }
+
     const cards = data.map(item => {
         return (
             <Cards
@@ -44,13 +54,13 @@ export default function App() {
 
     return (
         <div>
-            <Navbar />
-            <About />
-            <Work />
-            <Services />
+            <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} toggleBodyClass={toggleBodyClass}/>
+            <About darkMode={darkMode}/>
+            <Work darkMode={darkMode}/>
+            <Services darkMode={darkMode}/>
             <Carousel
                 responsive={responsive}
-                draggable={true}
+                draggable={false}
                 autoPlay={true}
                 infinite={true}
                 showDots={true}
@@ -58,7 +68,7 @@ export default function App() {
                 className="card-list">
                 {cards}
             </Carousel>
-            <Contact />
+            <Contact darkMode={darkMode}/>
         </div>
     )
 }
