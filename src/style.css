@@ -64,7 +64,11 @@ nav {
 .background {
     min-height: 100vh;
     max-width: 100%;
+<<<<<<< HEAD
     background-image: url(./img/test3.gif);
+=======
+    background-image: url(./img/test2.gif);
+>>>>>>> master
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -72,7 +76,10 @@ nav {
 }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 .d-l_mode {
     margin-top: 10px;
     width: 80px;
@@ -312,8 +319,13 @@ button {
     right: 0;
     margin: auto;
     background: white;
+<<<<<<< HEAD
     width: 600px;
     height: 400px;
+=======
+    width: 500px;
+    height: 440px;
+>>>>>>> master
     z-index: 9999;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
@@ -349,6 +361,18 @@ button {
     font-size: 18px;
     padding: 10px;
 }
+<<<<<<< HEAD
+=======
+.label-name {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 4px;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    padding: 10px;
+}
+>>>>>>> master
 
 .label-message {
     resize: none;
@@ -368,7 +392,11 @@ button {
     border: none;
     width: 80px;
     text-align: center;
+<<<<<<< HEAD
     margin-left: 370px;
+=======
+    margin-left: 320px;
+>>>>>>> master
     cursor: pointer;
     border-radius: 4px;
     transition: 0.2s linear;
