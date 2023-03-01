@@ -9,6 +9,7 @@ export default function Cards(props) {
                 <p className="card-title">{props.title}</p>
             </div>
         </div>
+         
     )
 }
 
