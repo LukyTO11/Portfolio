@@ -12,7 +12,7 @@ export default function Work(props) {
                 <div className="grid-item4"></div>
                 <div className="grid-item5"></div>
             </div>
-            <a href="#" className="link-work">
+            <a href="#background" className="link-work">
                 SEE ALL MY WORKS <i className="arrow">&#8594;</i>
             </a>
         </main >

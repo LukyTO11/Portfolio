@@ -1,2 +1,4 @@
 src/img/test2.gif filter=lfs diff=lfs merge=lfs -text
 *.gif filter=lfs diff=lfs merge=lfs -text
+static/media/anim_festival.7000a714e426ecb8d339.gif filter=lfs diff=lfs merge=lfs -text
+static/media/test2.d50da3c6debad5cdddec.gif filter=lfs diff=lfs merge=lfs -text
