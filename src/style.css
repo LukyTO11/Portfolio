@@ -686,9 +686,6 @@ footer {
         scroll-behavior: smooth;
     }
 
-    .d-l_mode {
-        display: none;
-    }
 
     .nav-icon {
         display: flex;
