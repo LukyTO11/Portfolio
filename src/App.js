@@ -64,7 +64,7 @@ export default function App() {
                 autoPlay={true}
                 infinite={true}
                 showDots={true}
-                autoPlaySpeed={3000}
+                autoPlaySpeed={6000}
                 className="card-list">
                 {cards}
             </Carousel>
