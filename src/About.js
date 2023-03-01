@@ -5,9 +5,6 @@ import { faXmark, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 export default function About(props) {
 
-<<<<<<< HEAD
-    const [showModal, setShowModal] = useState(false)
-=======
     /* const nodemailer = require('nodemailer')
 
     const transporter = nodemailer.createTransport({
@@ -37,7 +34,6 @@ export default function About(props) {
 
     const [showModal, setShowModal] = useState(false)
     const [name, setName] = useState("")
->>>>>>> master
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
     const typedElement = useRef(null)
@@ -57,10 +53,6 @@ export default function About(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-<<<<<<< HEAD
-        setShowModal(false)
-=======
-
         /* const mailOptions = {
             from: email,
             to: 'luky.contact@gmail.com',
@@ -76,8 +68,6 @@ export default function About(props) {
                 setShowModal(false)
             }
         }) */
-
->>>>>>> master
     }
 
     return (
@@ -105,17 +95,6 @@ export default function About(props) {
                     <div className="modal">
                         <div className="modal-content">
                             <h2>Contact me</h2>
-<<<<<<< HEAD
-                            <form onSubmit={handleSubmit}>
-                                <label>
-                                    <input className="label-email" placeholder="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                                </label>
-                                <label>
-                                    <textarea className="label-message" placeholder="message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-                                </label>
-                            </form>
-                            <div className="btn-send" onClick={() => setShowModal(false)}>
-=======
                             <form onSubmit={handleSubmit} method="POST">
                                 <label>
                                     <input
@@ -144,7 +123,6 @@ export default function About(props) {
                                 </label>
                             </form>
                             <div className="btn-send" onClick={handleSubmit}>
->>>>>>> master
                                 <FontAwesomeIcon icon={faPaperPlane} className="fa-paper" />
                             </div>
                             <div className="close-icon" onClick={() => setShowModal(false)}>
