@@ -533,63 +533,243 @@ main {
 
 /* Cards */
 
+.cards-list {
+    display: flex;
+}
+
+.containers {
+    width: 1000px;
+    margin: 0 auto;
+}
 
 .card {
-    margin: 150px;
-    background: linear-gradient(hsl(0 0% 0% / 0),
-            hsl(0 0% 0% / 1));
-    width: 600px;
-    height: 800px;
-    border-radius: 10px;
-    box-shadow: 5px 15px 15px rgba(0, 0, 0, 0.25);
-    scroll-snap-align: start;
-
-    transition: 400ms ease-in;
+    display: flex;
+    /* align-items: flex-start; */
+    flex-wrap: wrap;
+    padding: 50px 0;
+    justify-content: center;
 }
 
-.card:hover {
-    transform: scale(103%);
-    border-radius: 10px;
-    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.25);
+.card-item {
+    margin: 0 10px 20px;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 2px solid black;
+    transition: .2s linear;
 }
 
-.card-image {
-    width: 600px;
-    height: 600px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-}
-
-.card-title {
+.card-item_link {
+    display: block;
+    padding-top: 30px;
+    background-color: rgba(18, 18, 18, 0.8);
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
     text-align: center;
-    padding-top: 60px;
+}
+
+.card-item_link .card-item_title {
+    transition: .2s linear;
+}
+
+.card-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+
+.card-item_link:hover .card-item_bg {
+    transform: scale(12);
+}
+
+
+.card-item_title {
+    min-height: 87px;
+    margin: 0 0 25px;
+    overflow: hidden;
+    font-weight: bold;
     font-size: 30px;
-    font-weight: 900;
-    line-height: 30px;
     color: whitesmoke;
+    z-index: 2;
+    position: relative;
+    cursor: default;
 }
 
-.react-multi-carousel-track {
-    padding-top: 20px;
+.card-item_bg {
+    height: 128px;
+    width: 600px;
+    z-index: 1;
+    position: absolute;
+    bottom: -150px;
+    transition: all .5s ease;
 }
 
-.react-multiple-carousel__arrow {
-    border-radius: 10px;
-    height: 100px;
-    width: 30px;
+.card img {
+    z-index: 2;
+    position: absolute;
 }
 
-.react-multiple-carousel__arrow--left {
-    left: calc(3% + 1px);
+.color_first img {
+    width: 260px;
+    top: 140px;
+    left: 120px;
 }
 
-.react-multiple-carousel__arrow--right {
-    right: calc(1% + 1px);
+.color_second img {
+    width: 340px;
+    top: 140px;
+    left: 90px;
 }
 
-.react-multi-carousel-dot-list {
-    visibility: hidden;
+.color_third img {
+    width: 500px;
+    top: 70px;
+    left: 10px;
 }
+
+.color_fourth img {
+    width: 280px;
+    top: 100px;
+    left: 120px;
+}
+
+.card-item:hover {
+    transform: rotate(2deg);
+}
+
+.card-item_bg {
+    background-color: white;
+}
+
+.color_first .card-item_bg {
+    background-color: #f62929;
+}
+
+
+.color_second .card-item_bg {
+    background-color: #cd3e94;
+}
+
+.color_third .card-item_bg {
+    background-color: #4c49ea;
+}
+
+.color_fourth .card-item_bg {
+    background-color: #c173f9;
+}
+
+
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+
+    .card {
+        padding: 50px;
+        overflow-x: unset;
+    }
+
+    .card-item {
+        margin: 0 20px 40px;
+        max-width: 400px;
+    }
+
+    .card-item_link {
+        width: 350px;
+        height: 300px;
+        padding-top: 20px;
+    }
+
+    .card-item_title {
+        font-size: 24px;
+        min-height: 50px;
+    }
+
+    .card-item_bg {
+        height: 80px;
+        width: 350px;
+        bottom: -100px;
+    }
+
+    .color_first img {
+        width: 180px;
+        top: 90px;
+        left: 85px;
+    }
+
+    .color_second img {
+        width: 240px;
+        top: 90px;
+        left: 65px;
+    }
+
+    .color_third img {
+        width: 350px;
+        top: 50px;
+        left: 0;
+    }
+
+    .color_fourth img {
+        width: 200px;
+        top: 70px;
+        left: 85px;
+    }
+
+}
+
+@media only screen and (max-width: 1600px) {
+    .card-item {
+        transform: scale(80%);
+        margin: 0;
+    }
+
+    .cards-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .cards-list {
+        display: flex;
+        flex-wrap: wrap;
+        left: 200px;
+    }
+
+    .card img {
+        transform: scale(85%);
+    }
+
+    .color_first img {
+        top: 140px;
+        left: 50px;
+    }
+
+    .color_second img {
+        top: 140px;
+        left: 20px;
+    }
+
+    .color_third img {
+        top: 110px;
+        width: 400px;
+        left: 0;
+    }
+
+    .color_fourth img {
+        top: 100px;
+        left: 60px;
+    }
+
+    .card-item_link {
+        display: flex;
+        justify-content: center;
+        padding-right: 120px;
+    }
+
+    .card-item:hover {
+        transform: rotate(0deg);
+        transform: scale(90%);
+    }
+
+}
+
 
 
 /* Footer */
@@ -696,8 +876,6 @@ footer {
         display: none;
     }
 
-
-    /* About */
 
     .about h1 {
         font-size: 40px;
@@ -847,55 +1025,6 @@ footer {
         font-size: 60px;
     }
 
-    .card {
-        margin: 0;
-        background: linear-gradient(hsl(0 0% 0% / 0),
-                hsl(0 0% 0% / 1));
-        width: 260px;
-        height: 400px;
-        border-radius: 10px;
-        align-items: center;
-        box-shadow: none;
-        scroll-snap-align: start;
-
-        transition: 400ms ease-in;
-    }
-
-    .card-image {
-        width: 260px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 10px 10px 0 0;
-        overflow: hidden;
-    }
-
-    .card-title {
-        text-align: center;
-        padding-top: 0;
-        font-size: 20px;
-        font-weight: 900;
-        line-height: 30px;
-        color: whitesmoke;
-    }
-
-    .react-multi-carousel-list {
-        padding-bottom: 80px;
-    }
-
-    .react-multi-carousel-track {
-        padding-top: 20px;
-        padding-left: 70px;
-    }
-
-    .react-multiple-carousel__arrow {
-        display: none;
-    }
-
-    .react-multi-carousel-dot-list {
-        visibility: visible;
-    }
-
-    /* Contact */
 
     .info {
         width: 100%;
