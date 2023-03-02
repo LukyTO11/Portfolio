@@ -658,10 +658,14 @@ main {
 }
 
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1600px) {
     .card-item {
         transform: scale(80%);
         margin: 0;
+    }
+    .cards-list {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -702,6 +706,11 @@ main {
         justify-content: center;
         padding-right: 120px;
     }
+    .card-item:hover {
+        transform: rotate(0deg);
+        transform: scale(90%);
+    }
+    
 }
 
 
