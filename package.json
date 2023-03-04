@@ -4,21 +4,23 @@
   "private": true,
   "homepage": "https://lukyto11.github.io/Portfolio/",
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@hookform/resolvers": "^2.9.11",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "autoprefixer": "^10.4.13",
+    "emailjs-com": "^3.2.0",
     "gh-pages": "^5.0.0",
     "node": "^16.13.0",
-    "nodemailer": "^6.6.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.43.4",
     "react-scripts": "^5.0.1",
-    "stream-browserify": "^3.0.0",
     "typed.js": "^2.0.12",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^1.0.2"
   },
   "scripts": {
     "deploy": "npm run build && gh-pages -d build",
