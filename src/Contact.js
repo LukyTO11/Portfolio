@@ -1,46 +1,27 @@
 import React, { useState } from "react"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faXmark, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import Form from "./Form"
 
 export default function Contact(props) {
-    const [showModal, setShowModal] = useState(false)
-    const [email, setEmail] = useState("")
-    const [message, setMessage] = useState("")
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        setShowModal(false)
+    const handleShowmodal = () => {
+        setShowModal(!showModal)
     }
+
+    const [showModal, setShowModal] = useState(false)
+
     return (
         <footer id="contact-section" className={props.darkMode ? "dark" : ""}>
             <h1 className="footer-title"> Interested to collaborate together ? </h1>
             <div className="container-btn">
-                <button
-                    onClick={() => setShowModal(true)}
-                    className="btn-contactTwo">
-                    Contact Me
-                </button>
-            </div>
-            {showModal && (
-                <div className="modal">
-                    <div className="modal-content">
-                        <h2>Contact me</h2>
-                        <form onSubmit={handleSubmit}>
-                            <label>
-                                <input className="label-email" placeholder="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-                            </label>
-                            <label>
-                                <textarea className="label-message" placeholder="message" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-                            </label>
-                        </form>
-                        <div className="btn-send" onClick={() => setShowModal(false)}>
-                            <FontAwesomeIcon icon={faPaperPlane} className="fa-paper" />
-                        </div>
-                        <div className="close-icon" onClick={() => setShowModal(false)}>
-                            <FontAwesomeIcon icon={faXmark} className="fa-xmark" />
-                        </div>
-                    </div>
+                <div class="grid">
+                    <button
+                        onClick={() => setShowModal(true)}
+                        className="btn">
+                        Contact Me !
+                    </button>
                 </div>
+            </div>
+            {showModal && (<Form handleShowmodal={handleShowmodal} />
             )}
 
             <div className="info">

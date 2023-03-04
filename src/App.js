@@ -7,7 +7,6 @@ import Contact from "./Contact";
 import data from "./data";
 import Services from "./Services";
 
-
 export default function App() {
 
     const [darkMode, setDarkMode] = React.useState(true)
