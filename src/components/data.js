@@ -1,7 +1,7 @@
-import iconfirst from "./image/design-icon.png"
-import iconsec from "./image/dev-icon.png"
-import iconthird from "./image/content-icon.png"
-import iconfourth from "./image/illu-icon.png"
+import iconfirst from "../image/design-icon.png"
+import iconsec from "../image/dev-icon.png"
+import iconthird from "../image/content-icon.png"
+import iconfourth from "../image/illu-icon.png"
 
 export default [
     {

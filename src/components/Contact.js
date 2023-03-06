@@ -27,17 +27,17 @@ export default function Contact(props) {
             <div className="info">
                 <div className="info-luky">
                     <h3 className="info-title">Luky</h3>
-                    <h3 className="info-text">About</h3>
-                    <h3 className="info-text">Contact</h3>
-                    <h3 className="info-text">Services</h3>
+                    <h3><a href="#about-section" className="info-text">About</a></h3>
+                    <h3><a href="#main" className="info-text">Works</a></h3>
+                    <h3><a href="#contact-section" className="info-text">Services</a></h3>
                 </div>
                 <div className="info-social">
                     <h3 className="info-title">Social</h3>
-                    <h3 className="info-text">Instagram</h3>
-                    <h3 className="info-text">Twitter</h3>
-                    <h3 className="info-text">TikTok</h3>
+                    <h3><a href="https://www.instagram.com/luky__to/" className="info-text">Instagram</a></h3>
+                    <h3><a href="https://twitter.com/Lukyto_1" className="info-text">Twitter</a></h3>
+                    <h3><a href="https://www.tiktok.com/@lukyto_" className="info-text">TikTok</a></h3>
                 </div>
-                <img src={require("./image/iconCat.png")} alt="" className="iconCat" />
+                <img src={require("../image/iconCat.png")} className="iconCat" href="#"/>
                 <p className="info-rights">All Rights Reserved. 2023 &copy; LukyTO.</p>
             </div>
         </footer>
