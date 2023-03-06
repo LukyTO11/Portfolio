@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react"
 import Typed from "typed.js"
 import Form from "./Form"
+import {Link} from "react-router-dom"
 
 export default function About(props) {
 
@@ -18,7 +19,7 @@ export default function About(props) {
             typeSpeed: 100,
             loop: true,
             backDelay: 1500,
-            backSpeed: 80,
+            backSpeed: 80
         })
         return () => {
             typed.destroy()
@@ -36,17 +37,17 @@ export default function About(props) {
                     Hello, my nickname is Luky, a Freelance Illustrator/Animator
                     based in France. With a passion in web development.
                 </p>
-                <div></div>
-                <button
-                    className="btn-work"
-                >See my works
-                </button>
+                <Link to="/see-my-works">
+                    <button className="btn-work">
+                        See my work
+                    </button>
+                </Link>
                 <button
                     onClick={handleShowmodal}
                     className="btn-contact">
                     Contact me
                 </button>
-                {showModal && (<Form handleShowmodal={handleShowmodal}/>
+                {showModal && (<Form handleShowmodal={handleShowmodal} />
                 )}
             </div>
         </div>

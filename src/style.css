@@ -225,19 +225,27 @@ body.dark {
 
 /* About */
 
+
 .about-title,
 .about-text {
     padding-left: 120px;
-    margin-left: 200px;
+    margin-left: 180px;
     color: whitesmoke;
 }
 
+.about-typed {
+    color: rgba(177, 67, 231, 0.9);
+}
+
+div.dark .about-typed {
+    color: blue;
+}
 
 .about h1 {
     padding-top: 200px;
     font-style: italic;
     font-weight: 900;
-    font-size: 70px;
+    font-size: 90px;
     line-height: 50px;
 }
 
@@ -259,12 +267,12 @@ button {
 }
 
 .btn-work {
-    margin-left: 320px;
+    margin-left: 300px;
     font-weight: 700;
     font-size: 20px;
     line-height: 25px;
     background: white;
-    color: inherit;
+    color: black;
     border: 3px solid black;
     transition: 200ms linear;
     box-shadow: 0 0 0 black;
@@ -295,15 +303,6 @@ button {
     transform: translate(0, 0);
 }
 
-#c-yup {
-    color: tomato;
-    text-align: center;
-}
-
-#c-yup:before {
-    display: inline;
-    content: '⚠';
-}
 
 
 /* Modal Content */
@@ -529,6 +528,9 @@ main {
     border: 2px solid black;
 }
 
+.link {
+    text-decoration: none;
+}
 
 /* Services */
 
@@ -555,7 +557,6 @@ main {
 
 .card {
     display: flex;
-    /* align-items: flex-start; */
     flex-wrap: wrap;
     padding: 50px 0;
     justify-content: center;
@@ -866,6 +867,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    line-height: 1.5;
 }
 
 .info-luky {
@@ -904,6 +906,135 @@ footer {
     font-size: 24px;
     line-height: 30px;
     color: whitesmoke;
+    text-decoration: none;
+}
+
+
+/* See My Work Page */
+
+.seemyworks {
+    background: url(./img/layer3.png);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-iconCat {
+    background-color: White;
+    position: relative;
+    margin-top: 200px;
+    border: none;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s linear;
+    box-shadow: 0px 0px 10px rgba(156, 156, 156, 0.4);
+}
+
+
+.seemywork_iconCat {
+    width: 70px;
+}
+
+.works-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 360px;
+}
+
+.works-links_insta,
+.works-links_twitter,
+.works-links_tiktok {
+    font-weight: bold;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0 0.05em 0.5em rgba(97, 56, 216, 0.25), 0 0.15em 0.3em -0.1em rgba(156, 28, 218, 0.25),
+        inset 0 0 0.05em 0.0333em rgba(177, 67, 231, 0.25), inset 0 0.1em 0.2em 0em rgba(177, 67, 231, 0.25),
+        inset 0 0.1em 0.45em rgba(97, 56, 216, 0.25);
+    background: linear-gradient(var(--angle), #6138D8 25%, rgba(177, 67, 231, 0.9) 40%, rgba(177, 67, 231, 0.95) 65%,
+            #6138D8 85%) no-repeat -1px 50%/300% calc(100% + 2px);
+    color: white;
+    transition: color 0.3s, background 0.3s, transform 0.75s, background-position 0.5s, box-shadow 0.5s;
+    will-change: background-position, transform, box-shadow;
+    border-radius: var(--border-r);
+    border: var(--border-w) solid #6138D8;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+.works-links_insta:before,
+.works-links_twitter:before,
+.works-links_tiktok:before,
+.works-links_insta:after,
+.works-links_twitter:after,
+.works-links_tiktok:after {
+    content: "";
+    border-radius: inherit;
+    position: absolute;
+    transition: opacity 0.5s, filter 0.5s;
+}
+
+.works-links_insta:before,
+.works-links_twitter:before,
+.works-links_tiktok:before {
+    inset: calc(var(--border-w) * -1);
+    box-shadow: inset 0.0333em 0.0333em 0.2em #ca78e5, inset -0.0666em -0.0666em 0.15em #311879, inset 0.025em 0.025em 0.1em white;
+    mix-blend-mode: hard-light;
+}
+
+.works-links_insta:after,
+.works-links_twitter:after,
+.works-links_tiktok:after {
+    inset: 0;
+    border-radius: calc(var(--border-r) - var(--border-w));
+    box-shadow: -0.05em -0.05em 0.05em #311879, 0.05em 0.05em 0.05em #ca78e5;
+    mix-blend-mode: hard-light;
+}
+
+.works-links_insta:after,
+.works-links_twitter:after,
+.works-links_tiktok:after {
+    content: none;
+}
+
+.works-links_insta:hover,
+.works-links_twitter:hover,
+.works-links_tiktok:hover,
+.works-links_insta:focus,
+.works-links_twitter:focus,
+.works-links_tiktok:focus {
+    background-position: calc(100% + 1px) 50%;
+    box-shadow: 0 0.15em 1.5em rgba(136, 67, 231, 0.666), 0 0.15em 0.333em -0.1em rgba(156, 28, 218, 0.666), inset 0 0.15em 0.3em -0.1em rgba(177, 67, 231, 0),
+        inset 0 0 0.05em 0.0333em rgba(177, 67, 231, 0.25), inset 0 0.1em 0.666em rgba(97, 56, 216, 0.333);
+}
+
+.backHome {
+    width: 400px;
+    height: 70px;
+    background-color: white;
+    border: whitesmoke;
+    transition: 0.2s linear;
+}
+
+.backHome:hover {
+    transform: scale(102%);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+}
+
+.fa-House {
+    height: 30px;
+    margin-top: 10px;
 }
 
 

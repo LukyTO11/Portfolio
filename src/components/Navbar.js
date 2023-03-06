@@ -2,6 +2,8 @@ import { React } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
+import {Link} from "react-router-dom"
+
 export default function Navbar(props) {
 
     function handleMouseOver() {
@@ -41,7 +43,10 @@ export default function Navbar(props) {
     return (
         <div className="background" id="background">
             <nav id="navbar" className={props.darkMode ? "dark" : ""}>
-                <li onClick={() => scrollToSection('#background')}><img src={require("./image/icon-catv2.png")} alt="" className="nav-icon" /></li>
+                    <li onClick={() => scrollToSection('#background')}>
+                        <img src={require("../image/icon-catv2.png")} alt="" className="nav-icon" />
+                    </li>
+                
                 <ul className="navbar-center">
                     <li onClick={() => scrollToSection('#about-section')}>About</li>
                     <li onClick={() => scrollToSection('#main')}>Works</li>
