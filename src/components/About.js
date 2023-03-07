@@ -26,28 +26,6 @@ export default function About(props) {
         }
     }, [])
 
-<<<<<<< HEAD
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        /* const mailOptions = {
-            from: email,
-            to: 'luky.contact@gmail.com',
-            subject: 'Message from your website',
-            text: `Name: ${name}\nEmail: ${email}\n\n${message}`
-        }
-
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                console.log(error)
-            } else {
-                console.log('Email sent: ' + info.response)
-                setShowModal(false)
-            }
-        }) */
-    }
-
-=======
->>>>>>> master
     return (
         <div className={props.darkMode ? "dark" : ""}>
 
