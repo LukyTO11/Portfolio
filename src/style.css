@@ -719,6 +719,71 @@ main {
         left: 85px;
     }
 
+    .grid-item1 {
+        background: url(./img/img_bendejun.png) no-repeat center;
+        background-size: cover;
+        grid-column: 1/3;
+        grid-row: 1/7;
+        border: #000000;
+    }
+    
+    .grid-item1:hover {
+        background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
+        background-size: cover;
+        grid-column: 1/3;
+        grid-row: 1/7;
+    }
+
+    .grid-item2 {
+        background: url(./img/img_trame.png) no-repeat center;
+        background-size: cover;
+        grid-column: 3;
+        grid-row: 1/9;
+    }
+    
+    .grid-item2:hover {
+        background: url(./img/anim_trames.gif) no-repeat center;
+        background-size: cover;
+        grid-column: 3;
+        grid-row: 1/9;
+    }
+    
+    .grid-item3 {
+        background: url(./img/img_festival.gif) no-repeat center;
+        background-size: 100% 1000px;
+        grid-column: 2;
+        grid-row: 7/16;
+    }
+    
+    .grid-item3:hover {
+        background: url(./img/anim_festival.gif) no-repeat center;
+        background-size: 100% 1000px;
+        grid-column: 2;
+        grid-row: 7/16;
+    }
+    
+    .grid-item4 {
+        background: url(./img/ovni.png) no-repeat center;
+        background-size: cover;
+        grid-column: 1;
+        grid-row: 7/16;
+    }
+    
+    .grid-item5 {
+        background: url(./img/alone.png) no-repeat top;
+        background-size: cover;
+        grid-column: 3;
+        grid-row: 9/16;
+    }
+    
+    .grid-item5:hover {
+        background: url(./img/alone.png) no-repeat center lightgrey;
+        background-size: 70%;
+        grid-column: 3;
+        grid-row: 9/16;
+    
+    }
+
 }
 
 @media only screen and (max-width: 1600px) {
@@ -1033,6 +1098,7 @@ footer {
 .fa-House {
     height: 30px;
     margin-top: 10px;
+    color: #000000;
 }
 
 
@@ -1134,14 +1200,14 @@ footer {
     }
 
     .grid-item1 {
-        background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
+        background: url(./img/img_bendejun.png) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 1/7;
     }
-
+    
     .grid-item1:hover {
-        background: url(./img/img_bendejun.png) no-repeat center;
+        background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 1/7;
@@ -1149,14 +1215,14 @@ footer {
 
 
     .grid-item2 {
-        background: url(./img/anim_trames.gif) no-repeat center;
+        background: url(./img/img_trame.png) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 7/14;
     }
 
     .grid-item2:hover {
-        background: url(./img/img_trame.png) no-repeat center;
+        background: url(./img/anim_trames.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 7/14;
@@ -1164,14 +1230,14 @@ footer {
 
 
     .grid-item3 {
-        background: url(./img/anim_festival.gif) no-repeat center;
+        background: url(./img/img_festival.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 14/21;
     }
-
+    
     .grid-item3:hover {
-        background: url(./img/img_festival.gif) no-repeat center;
+        background: url(./img/anim_festival.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 14/21;
@@ -1259,9 +1325,11 @@ footer {
     }
 
     .modal {
-        transform: scale(60%);
-        margin-right: -68px;
+        transform: scale(80%);
+        margin-right: -20px;
+        width: 110%;
     }
+
 
     .btn-work,
     .btn-contact {
@@ -1297,7 +1365,6 @@ footer {
     .works-links_tiktok {
         overflow: hidden;
     }
-
 
 
 }
