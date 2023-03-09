@@ -27,6 +27,17 @@ footer.dark .info-title {
     color: black;
 }
 
+nav .fa {
+    display: none;
+}
+
+.fa-times {
+    visibility: hidden;
+}
+
+.fa-brands {
+    visibility: hidden;
+}
 
 /* Navbar */
 
@@ -726,7 +737,7 @@ main {
         grid-row: 1/7;
         border: #000000;
     }
-    
+
     .grid-item1:hover {
         background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
         background-size: cover;
@@ -740,48 +751,48 @@ main {
         grid-column: 3;
         grid-row: 1/9;
     }
-    
+
     .grid-item2:hover {
         background: url(./img/anim_trames.gif) no-repeat center;
         background-size: cover;
         grid-column: 3;
         grid-row: 1/9;
     }
-    
+
     .grid-item3 {
         background: url(./img/img_festival.gif) no-repeat center;
         background-size: 100% 1000px;
         grid-column: 2;
         grid-row: 7/16;
     }
-    
+
     .grid-item3:hover {
         background: url(./img/anim_festival.gif) no-repeat center;
         background-size: 100% 1000px;
         grid-column: 2;
         grid-row: 7/16;
     }
-    
+
     .grid-item4 {
         background: url(./img/ovni.png) no-repeat center;
         background-size: cover;
         grid-column: 1;
         grid-row: 7/16;
     }
-    
+
     .grid-item5 {
         background: url(./img/alone.png) no-repeat top;
         background-size: cover;
         grid-column: 3;
         grid-row: 9/16;
     }
-    
+
     .grid-item5:hover {
         background: url(./img/alone.png) no-repeat center lightgrey;
         background-size: 70%;
         grid-column: 3;
         grid-row: 9/16;
-    
+
     }
 
 }
@@ -871,6 +882,7 @@ main {
     position: relative;
     border-radius: var(--border-r);
     border: var(--border-w) solid #6138D8;
+    overflow: unset;
 }
 
 .btn:before,
@@ -1113,24 +1125,76 @@ footer {
     }
 
     nav {
-        width: 80%;
+        width: 100%;
         display: flex;
-        align-items: top;
         justify-content: space-between;
-        padding: 38px 8%;
         transition: all 0.3s ease-in-out;
         scroll-behavior: smooth;
     }
 
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+        transform: scale(120%);
+    }
+
+    .nav-icon {
+        transform: scale(90%);
+    }
+
+    .toggler {
+        display: none;
+    }
 
     .nav-icon {
         display: flex;
         width: 60%;
     }
 
-    .navbar-center {
-        display: none;
+    .fa-times {
+        visibility: visible;
+        position: absolute;
+        display: block;
+        top: 10px;
+        left: 20px;
+        z-index: 3;
+        font-size: 30px;
+        color: white;
     }
+
+    .fa-brands {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-center {
+        position: fixed;
+        right: -300px;
+        top: 0;
+        height: 100vh;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: 1s;
+        z-index: 2;
+    }
+
+    .navbar-center li {
+        margin-right: 100px;
+    }
+
+    nav ul {
+        border-radius: unset;
+        padding: 150px;
+    }
+
 
     .background {
         background: unset;
@@ -1205,7 +1269,7 @@ footer {
         grid-column: 1;
         grid-row: 1/7;
     }
-    
+
     .grid-item1:hover {
         background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
         background-size: 100%;
@@ -1235,7 +1299,7 @@ footer {
         grid-column: 1;
         grid-row: 14/21;
     }
-    
+
     .grid-item3:hover {
         background: url(./img/anim_festival.gif) no-repeat center;
         background-size: 100%;

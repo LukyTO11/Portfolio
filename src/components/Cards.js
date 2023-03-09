@@ -1,15 +1,22 @@
 import React from "react"
+import PropTypes from 'prop-types';
+
 
 export default function Cards(props) {
 
+    Cards.propTypes = {
+        className: PropTypes.string,
+        title: PropTypes.string.isRequired,
+        coverImg: PropTypes.string.isRequired
+    }
 
     return (
         <div className={`containers ${props.className}`}>
             <div className="card">
-                <div class="card-item">
-                    <div class="card-item_link">
-                        <div class="card-item_bg"></div>
-                        <div class="card-item_title">
+                <div className="card-item">
+                    <div className="card-item_link">
+                        <div className="card-item_bg"></div>
+                        <div className="card-item_title">
                             <p className="card-title">{props.title}</p>
                         </div>
                         <img src={props.coverImg} className="card-icons" />

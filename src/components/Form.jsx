@@ -5,8 +5,14 @@ import * as yup from 'yup';
 import emailjs from '@emailjs/browser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import PropTypes from 'prop-types';
 
 const Form = ({ handleShowmodal }) => {
+
+  Form.propTypes = {
+    handleShowmodal: PropTypes.func.isRequired,
+  };
+
   const schema = yup
     .object({
       name: yup
@@ -62,7 +68,7 @@ const Form = ({ handleShowmodal }) => {
           <div className="modal-content">
             <h2>Contact me</h2>
             <form onSubmit={handleSubmit(onSubmit)} className="content">
-              <label htmlfor="name">
+              <label htmlFor="name">
                 <input
                   className="label-name"
                   placeholder="name"
@@ -72,7 +78,7 @@ const Form = ({ handleShowmodal }) => {
                   {...register('name')}
                 />
               </label>
-              <label htmlfor="email">
+              <label htmlFor="email">
                 <input
                   className="label-email"
                   placeholder="example@gmail.com"
@@ -82,7 +88,7 @@ const Form = ({ handleShowmodal }) => {
                   {...register('email')}
                 />
               </label>
-              <label hmtlfor="message">
+              <label htmlFor="message">
                 <textarea
                   className="label-message"
                   placeholder="message"

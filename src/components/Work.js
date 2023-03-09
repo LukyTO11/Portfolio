@@ -1,7 +1,13 @@
 import React from "react"
 import { Link } from "react-router-dom"
+import PropTypes from "prop-types"
 
 export default function Work(props) {
+
+    Work.propTypes = {
+        darkMode: PropTypes.bool.isRequired,
+    }
+
     return (
         <main id="main" className={props.darkMode ? "dark" : ""}>
             <h1 className="main-title">MY WORK</h1>
