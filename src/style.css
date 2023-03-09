@@ -1171,6 +1171,10 @@ footer {
         margin-top: 80px;
     }
 
+    .fa-brands a {
+        color: white;
+    }
+
     .fa-brands a:visited {
         color: white;
     }
