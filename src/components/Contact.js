@@ -1,7 +1,12 @@
 import React, { useState } from "react"
 import Form from "./Form"
+import PropTypes from 'prop-types';
 
 export default function Contact(props) {
+
+    Contact.propTypes = {
+        darkMode: PropTypes.bool.isRequired,
+    }
 
     const handleShowmodal = () => {
         setShowModal(!showModal)
@@ -13,7 +18,7 @@ export default function Contact(props) {
         <footer id="contact-section" className={props.darkMode ? "dark" : ""}>
             <h1 className="footer-title"> Interested to collaborate together ? </h1>
             <div className="container-btn">
-                <div class="grid">
+                <div className="grid">
                     <button
                         onClick={() => setShowModal(true)}
                         className="btn">

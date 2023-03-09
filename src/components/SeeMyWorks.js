@@ -13,10 +13,12 @@ export default function SeeMyWorks() {
                 </div>
             </div>
             <div className="works-links">
-                <a href="https://www.instagram.com/luky__to/" className="works-links_insta">Instagram</a>
-                <a href="https://twitter.com/Lukyto_1" className="works-links_twitter">Twitter</a>
-                <a href="https://www.tiktok.com/@lukyto_" className="works-links_tiktok">TikTok</a>
-                <Link to="/">
+                <div className="share-links">
+                    <a href="https://www.instagram.com/luky__to/" className="works-links_insta">Instagram</a>
+                    <a href="https://twitter.com/Lukyto_1" className="works-links_twitter">Twitter</a>
+                    <a href="https://www.tiktok.com/@lukyto_" className="works-links_tiktok">TikTok</a>
+                </div>
+                <Link to="/Portfolio">
                     <button className="backHome">
                         <FontAwesomeIcon icon={faHouse} className="fa-House" />
                     </button>

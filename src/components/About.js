@@ -1,9 +1,15 @@
 import React, { useState, useEffect, useRef } from "react"
 import Typed from "typed.js"
 import Form from "./Form"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
+import PropTypes from 'prop-types';
+
 
 export default function About(props) {
+
+    About.propTypes = {
+        darkMode: PropTypes.bool.isRequired,
+    }
 
     const handleShowmodal = () => {
         setShowModal(!showModal)
@@ -28,9 +34,8 @@ export default function About(props) {
 
     return (
         <div className={props.darkMode ? "dark" : ""}>
-
             <div className="about" id="about-section">
-                <h1 className="about-title">I'm {" "}
+                <h1 className="about-title">I&apos;m {" "}
                     <span ref={typedElement} className="about-typed"></span>
                 </h1>
                 <p className="about-text">

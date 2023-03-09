@@ -27,6 +27,17 @@ footer.dark .info-title {
     color: black;
 }
 
+nav .fa {
+    display: none;
+}
+
+.fa-times {
+    visibility: hidden;
+}
+
+.fa-brands {
+    visibility: hidden;
+}
 
 /* Navbar */
 
@@ -67,8 +78,6 @@ nav {
     background-image: url(./img/test3.gif);
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    width: 100%;
 }
 
 .navbar-center {
@@ -721,6 +730,71 @@ main {
         left: 85px;
     }
 
+    .grid-item1 {
+        background: url(./img/img_bendejun.png) no-repeat center;
+        background-size: cover;
+        grid-column: 1/3;
+        grid-row: 1/7;
+        border: #000000;
+    }
+
+    .grid-item1:hover {
+        background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
+        background-size: cover;
+        grid-column: 1/3;
+        grid-row: 1/7;
+    }
+
+    .grid-item2 {
+        background: url(./img/img_trame.png) no-repeat center;
+        background-size: cover;
+        grid-column: 3;
+        grid-row: 1/9;
+    }
+
+    .grid-item2:hover {
+        background: url(./img/anim_trames.gif) no-repeat center;
+        background-size: cover;
+        grid-column: 3;
+        grid-row: 1/9;
+    }
+
+    .grid-item3 {
+        background: url(./img/img_festival.gif) no-repeat center;
+        background-size: 100% 1000px;
+        grid-column: 2;
+        grid-row: 7/16;
+    }
+
+    .grid-item3:hover {
+        background: url(./img/anim_festival.gif) no-repeat center;
+        background-size: 100% 1000px;
+        grid-column: 2;
+        grid-row: 7/16;
+    }
+
+    .grid-item4 {
+        background: url(./img/ovni.png) no-repeat center;
+        background-size: cover;
+        grid-column: 1;
+        grid-row: 7/16;
+    }
+
+    .grid-item5 {
+        background: url(./img/alone.png) no-repeat top;
+        background-size: cover;
+        grid-column: 3;
+        grid-row: 9/16;
+    }
+
+    .grid-item5:hover {
+        background: url(./img/alone.png) no-repeat center lightgrey;
+        background-size: 70%;
+        grid-column: 3;
+        grid-row: 9/16;
+
+    }
+
 }
 
 @media only screen and (max-width: 1600px) {
@@ -808,6 +882,7 @@ main {
     position: relative;
     border-radius: var(--border-r);
     border: var(--border-w) solid #6138D8;
+    overflow: unset;
 }
 
 .btn:before,
@@ -1035,6 +1110,7 @@ footer {
 .fa-House {
     height: 30px;
     margin-top: 10px;
+    color: #000000;
 }
 
 
@@ -1049,25 +1125,86 @@ footer {
     }
 
     nav {
-        width: 80%;
+        width: 100%;
         display: flex;
-        align-items: top;
         justify-content: space-between;
-        padding: 38px 8%;
         transition: all 0.3s ease-in-out;
         scroll-behavior: smooth;
     }
 
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 20px;
+        font-size: 22px;
+        cursor: pointer;
+        transform: scale(120%);
+    }
+
+    .nav-icon {
+        transform: scale(90%);
+    }
+
+    .toggler {
+        display: none;
+    }
 
     .nav-icon {
         display: flex;
         width: 60%;
     }
 
-    .navbar-center {
-        display: none;
+    .fa-times {
+        visibility: visible;
+        position: absolute;
+        display: block;
+        top: 10px;
+        left: 20px;
+        z-index: 3;
+        font-size: 30px;
+        color: white;
     }
 
+    .fa-brands {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-center {
+        position: fixed;
+        right: -300px;
+        top: 0;
+        height: 100vh;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transition: 1s;
+        z-index: 2;
+    }
+
+    .navbar-center li {
+        margin-right: 100px;
+    }
+
+    nav ul {
+        border-radius: unset;
+        padding: 150px;
+    }
+
+
+    .background {
+        background: unset;
+        z-index: -1;
+        min-height: 10vh;
+    }
+
+    #about-section {
+        z-index: 2;
+    }
 
     .about h1 {
         font-size: 40px;
@@ -1099,6 +1236,10 @@ footer {
         color: whitesmoke;
     }
 
+    main.dark .main-title {
+        color: whitesmoke;
+    }
+
     .grid-container {
         margin-top: 0;
         margin-bottom: 0;
@@ -1123,14 +1264,14 @@ footer {
     }
 
     .grid-item1 {
-        background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
+        background: url(./img/img_bendejun.png) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 1/7;
     }
 
     .grid-item1:hover {
-        background: url(./img/img_bendejun.png) no-repeat center;
+        background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 1/7;
@@ -1138,14 +1279,14 @@ footer {
 
 
     .grid-item2 {
-        background: url(./img/anim_trames.gif) no-repeat center;
+        background: url(./img/img_trame.png) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 7/14;
     }
 
     .grid-item2:hover {
-        background: url(./img/img_trame.png) no-repeat center;
+        background: url(./img/anim_trames.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 7/14;
@@ -1153,14 +1294,14 @@ footer {
 
 
     .grid-item3 {
-        background: url(./img/anim_festival.gif) no-repeat center;
+        background: url(./img/img_festival.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 14/21;
     }
 
     .grid-item3:hover {
-        background: url(./img/img_festival.gif) no-repeat center;
+        background: url(./img/anim_festival.gif) no-repeat center;
         background-size: 100%;
         grid-column: 1;
         grid-row: 14/21;
@@ -1246,5 +1387,48 @@ footer {
     .footer-title {
         overflow: hidden;
     }
+
+    .modal {
+        transform: scale(80%);
+        margin-right: -20px;
+        width: 110%;
+    }
+
+
+    .btn-work,
+    .btn-contact {
+        transform: scale(80%);
+        margin: 0;
+    }
+
+    .seemyworks {
+        background: url(./img/layer3.png);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-iconCat {
+        margin-top: 80px;
+    }
+
+
+    .seemywork_iconCat {
+        width: 60px;
+    }
+
+    .works-links {
+        transform: scale(80%);
+        margin-top: 200px;
+    }
+
+    .works-links_insta,
+    .works-links_twitter,
+    .works-links_tiktok {
+        overflow: hidden;
+    }
+
 
 }
