@@ -8,7 +8,7 @@ import data from "./components/data";
 import Services from "./components/Services";
 
 
-export default function Home(props) {
+export default function Home() {
 
     const [darkMode, setDarkMode] = React.useState(true)
 
@@ -31,6 +31,7 @@ export default function Home(props) {
             />
         )
     })
+    
     
     return (
         <div>

@@ -1,7 +1,7 @@
-import { React, useEffect } from "react"
+import { React, useEffect, useRef } from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
-import {faInstagram, faTwitter, faTiktok} from '@fortawesome/free-brands-svg-icons'
+import { faInstagram, faTwitter, faTiktok } from '@fortawesome/free-brands-svg-icons'
 import PropTypes from "prop-types"
 
 export default function Navbar(props) {
@@ -57,12 +57,20 @@ export default function Navbar(props) {
         })
     }
 
-    const navLinks = document.getElementById("navLinks")
+    const navLinksRef = useRef(null)
+
     function showMenu() {
-        navLinks.style.right = "0"
+        const navLinks = navLinksRef.current
+        if (navLinks) {
+            navLinks.style.right = "0"
+        }
     }
+
     function hideMenu() {
-        navLinks.style.right = "-300px"
+        const navLinks = navLinksRef.current
+        if (navLinks) {
+            navLinks.style.right = "-300px"
+        }
     }
 
     return (
@@ -72,16 +80,16 @@ export default function Navbar(props) {
                     <img src={require("../image/icon-catv2.png")} alt="" className="nav-icon" />
                 </li>
                 <div className="nav-links">
-                    <ul className="navbar-center" id="navLinks">
-                        <FontAwesomeIcon icon={faTimes} className="fa-times" onClick={hideMenu} />
-                        <li onClick={() => {scrollToSection('#about-section'); hideMenu()}}>About</li>
-                        <li onClick={() => {scrollToSection('#main'); hideMenu()}}>Works</li>
-                        <li onClick={() => {scrollToSection('#contact-section'); hideMenu()}}>Contact</li>
+                    <ul className="navbar-center" id="navLinks" ref={navLinksRef}>
+                        <FontAwesomeIcon icon={faTimes} className="fa-times" onClick={() => { navLinksRef.current && hideMenu() }} />
+                        <li onClick={() => { scrollToSection('#about-section'); navLinksRef.current && hideMenu() }} className="navlink-about">About</li>
+                        <li onClick={() => { scrollToSection('#main'); navLinksRef.current && hideMenu() }} className="navlink-work">Works</li>
+                        <li onClick={() => { scrollToSection('#contact-section'); navLinksRef.current && hideMenu() }} className="navlink-contact">Contact</li>
                         <li id="shop" onMouseOver={() => handleMouseOver()}>Shop</li>
                         <div className="fa-brands">
-                            <FontAwesomeIcon icon={faInstagram}/>
-                            <FontAwesomeIcon icon={faTwitter}/>
-                            <FontAwesomeIcon icon={faTiktok}/>
+                            <a href="https://www.instagram.com/luky__to/"><FontAwesomeIcon icon={faInstagram} className="fa-insta" /></a>
+                            <a href="https://twitter.com/Lukyto_1"><FontAwesomeIcon icon={faTwitter} className="fa-twitter" /></a>
+                            <a href="https://www.tiktok.com/@lukyto_"><FontAwesomeIcon icon={faTiktok} className="fa-tiktok" /></a>
                         </div>
                     </ul>
                 </div>

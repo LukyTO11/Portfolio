@@ -987,7 +987,7 @@ footer {
 
 /* See My Work Page */
 
-.seemyworks {
+#seemyworks {
     background: url(./img/layer3.png);
     position: absolute;
     width: 100%;
@@ -1125,6 +1125,7 @@ footer {
     }
 
     nav {
+        padding-bottom: 0px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -1134,15 +1135,11 @@ footer {
 
     nav .fa {
         display: block;
-        color: #fff;
+        color: black;
         margin: 20px;
         font-size: 22px;
         cursor: pointer;
         transform: scale(120%);
-    }
-
-    .nav-icon {
-        transform: scale(90%);
     }
 
     .toggler {
@@ -1150,6 +1147,7 @@ footer {
     }
 
     .nav-icon {
+        transform: scale(90%);
         display: flex;
         width: 60%;
     }
@@ -1168,8 +1166,21 @@ footer {
     .fa-brands {
         visibility: visible;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        font-size: 30px;
+        color: white;
+        margin-top: 80px;
+    }
+
+    .fa-brands a:visited {
+        color: white;
+    }
+
+    .fa-insta {
+        margin-right: 30px;
+    }
+
+    .fa-twitter {
+        margin-right: 30px;
     }
 
     .navbar-center {
@@ -1181,7 +1192,8 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding-bottom: 20px;
         transition: 1s;
         z-index: 2;
     }
@@ -1195,7 +1207,6 @@ footer {
         padding: 150px;
     }
 
-
     .background {
         background: unset;
         z-index: -1;
@@ -1204,6 +1215,9 @@ footer {
 
     #about-section {
         z-index: 2;
+    }
+    .about {
+        margin-bottom: 50px;
     }
 
     .about h1 {
@@ -1224,7 +1238,7 @@ footer {
     }
 
     main {
-        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0.8);
         height: 3000px;
         overflow-y: hidden;
     }
@@ -1401,7 +1415,7 @@ footer {
         margin: 0;
     }
 
-    .seemyworks {
+    #seemyworks {
         background: url(./img/layer3.png);
         position: absolute;
         width: 100%;

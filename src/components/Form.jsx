@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -32,11 +32,11 @@ const Form = ({ handleShowmodal }) => {
 
   const {
     register,
-    formState: { errors },
     handleSubmit,
   } = useForm({
     resolver: yupResolver(schema),
   });
+
 
   const onSubmit = (data, r) => {
     alert('Thanks for your message !');
@@ -49,15 +49,15 @@ const Form = ({ handleShowmodal }) => {
       reply_to: r.target.reset(),
     });
     handleShowmodal()
-  };
+  }
 
   const sendFeedback = (serviceId, templateId, variables) => {
     emailjs
-      .send(serviceId, templateId, variables, 'bUBolQKJcwqqhX-mk')
-      .then((res) => {
+      .send(serviceId, templateId, variables, process.env.REACT_APP_EMAILJS_KEY)
+      .then(() => {
         console.log('succes');
       })
-      .catch((err) => console.error('There is a mistake!'));
+      .catch(() => console.error('There is a mistake!'));
   };
 
   return (
