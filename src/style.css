@@ -41,18 +41,6 @@ nav .fa {
 
 /* End of DarkMode */
 
-/* AOS Animate */
-
-/* .aos-init {
-    opacity: 0;
-    transform: translateY(50px);
-    transition-property: opacity, transform;
-}
-.aos-animate {
-    opacity: 1;
-    transform: translateY(0);
-} */
-
 
 /* Navbar */
 
@@ -90,9 +78,13 @@ nav {
 .background {
     min-height: 100vh;
     max-width: 100%;
-    background-image: url(./img/test3.gif);
+    background-image: url(./img/test4.gif);
     background-size: cover;
     background-attachment: fixed;
+}
+
+.background.dark{
+    background-image: url(./img/test3.gif);
 }
 
 .navbar-center {

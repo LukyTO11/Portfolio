@@ -21,8 +21,10 @@ export default function Services(props) {
     }
 
     return (
-        <div id="services" className={props.darkMode ? "dark" : ""} data-aos="fade-up">
-            <h1 className="services-title">Services</h1>
+        <div id="services" className={props.darkMode ? "dark" : ""}>
+            <div data-aos="fade-up">
+                <h1 className="services-title">Services</h1>
+            </div>
         </div>
     )
 }

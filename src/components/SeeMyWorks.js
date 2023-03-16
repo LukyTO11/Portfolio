@@ -2,16 +2,10 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHouse } from "@fortawesome/free-solid-svg-icons"
-import PropTypes from 'prop-types'
 
-export default function SeeMyWorks(props) {
-
-    SeeMyWorks.propTypes = {
-        darkMode: PropTypes.bool.isRequired,
-    }
-
+export default function SeeMyWorks() {
     return (
-        <div id="seemyworks" className={props.darkMode ? "dark" : ""}>
+        <div id="seemyworks">
             <div>
                 <div className="btn-iconCat">
                     <img src={require("../image/iconCat.png")} className="seemywork_iconCat" href="#" />
@@ -32,3 +26,4 @@ export default function SeeMyWorks(props) {
         </div>
     )
 }
+

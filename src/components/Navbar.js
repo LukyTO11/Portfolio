@@ -74,7 +74,7 @@ export default function Navbar(props) {
     }
 
     return (
-        <div className="background" id="background">
+        <div className={"background " + (props.darkMode ? "dark" : "")} id="background">
             <nav id="navbar" className={props.darkMode ? "dark" : ""}>
                 <li onClick={() => scrollToSection('#background')}>
                     <img src={require("../image/icon-catv2.png")} alt="" className="nav-icon" />
