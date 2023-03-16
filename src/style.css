@@ -39,6 +39,21 @@ nav .fa {
     visibility: hidden;
 }
 
+/* End of DarkMode */
+
+/* AOS Animate */
+
+/* .aos-init {
+    opacity: 0;
+    transform: translateY(50px);
+    transition-property: opacity, transform;
+}
+.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+
 /* Navbar */
 
 nav {
@@ -232,7 +247,13 @@ body.dark {
     background: url(./img/layer3.png);
 }
 
+/* End of Navbar */
+
 /* About */
+
+.about {
+    margin-bottom: 800px;
+}
 
 
 .about-title,
@@ -312,6 +333,12 @@ button {
     transform: translate(0, 0);
 }
 
+.gif-luky {
+    position: absolute;
+    width: 1400px;
+    right: 160px;
+    top: 50px;
+}
 
 
 /* Modal Content */
@@ -402,6 +429,8 @@ button {
     box-shadow: 0 0 4px rgba(32, 39, 241, 0.5);
 }
 
+/* End of About */
+
 
 /* Works */
 
@@ -412,10 +441,9 @@ main {
 }
 
 .main-title {
-    margin-top: 500px;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     font-weight: bold;
-    font-size: 10em;
+    font-size: 15em;
     text-transform: uppercase;
     text-align: center;
     line-height: 121px;
@@ -541,12 +569,14 @@ main {
     text-decoration: none;
 }
 
+/* End of Works */
+
 /* Services */
 
 
 .services-title {
     margin-top: 50rem;
-    font-size: 200px;
+    font-size: 15em;
     text-align: center;
     color: whitesmoke;
 }
@@ -730,6 +760,10 @@ main {
         left: 85px;
     }
 
+    main {
+        margin-top: -150px;
+    }
+
     .grid-item1 {
         background: url(./img/img_bendejun.png) no-repeat center;
         background-size: cover;
@@ -793,6 +827,13 @@ main {
         grid-column: 3;
         grid-row: 9/16;
 
+    }
+
+    .gif-luky {
+        position: absolute;
+        width: 1000px;
+        right: 50px;
+        top: 1050px;
     }
 
 }
@@ -917,6 +958,8 @@ main {
         inset 0 0 0.05em 0.0333em rgba(177, 67, 231, 0.25), inset 0 0.1em 0.666em rgba(97, 56, 216, 0.333);
 }
 
+/* End of Services */
+
 /* Footer */
 
 
@@ -984,10 +1027,12 @@ footer {
     text-decoration: none;
 }
 
+/* End of Footer */
+
 
 /* See My Work Page */
 
-.seemyworks {
+#seemyworks {
     background: url(./img/layer3.png);
     position: absolute;
     width: 100%;
@@ -1125,6 +1170,7 @@ footer {
     }
 
     nav {
+        padding-bottom: 0px;
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -1134,15 +1180,11 @@ footer {
 
     nav .fa {
         display: block;
-        color: #fff;
+        color: black;
         margin: 20px;
         font-size: 22px;
         cursor: pointer;
         transform: scale(120%);
-    }
-
-    .nav-icon {
-        transform: scale(90%);
     }
 
     .toggler {
@@ -1150,6 +1192,7 @@ footer {
     }
 
     .nav-icon {
+        transform: scale(90%);
         display: flex;
         width: 60%;
     }
@@ -1168,8 +1211,25 @@ footer {
     .fa-brands {
         visibility: visible;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        font-size: 30px;
+        color: white;
+        margin-top: 80px;
+    }
+
+    .fa-brands a {
+        color: white;
+    }
+
+    .fa-brands a:visited {
+        color: white;
+    }
+
+    .fa-insta {
+        margin-right: 30px;
+    }
+
+    .fa-twitter {
+        margin-right: 30px;
     }
 
     .navbar-center {
@@ -1181,7 +1241,8 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding-bottom: 20px;
         transition: 1s;
         z-index: 2;
     }
@@ -1195,15 +1256,22 @@ footer {
         padding: 150px;
     }
 
-
     .background {
         background: unset;
         z-index: -1;
-        min-height: 10vh;
+        min-height: 15vh;
     }
 
     #about-section {
         z-index: 2;
+    }
+
+    .gif-luky {
+        display: none;
+    }
+
+    .about {
+        margin-bottom: 50px;
     }
 
     .about h1 {
@@ -1224,7 +1292,7 @@ footer {
     }
 
     main {
-        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0.8);
         height: 3000px;
         overflow-y: hidden;
     }
@@ -1394,6 +1462,9 @@ footer {
         width: 110%;
     }
 
+    .btn-send {
+        margin-left: 275px;
+    }
 
     .btn-work,
     .btn-contact {
@@ -1401,7 +1472,7 @@ footer {
         margin: 0;
     }
 
-    .seemyworks {
+    #seemyworks {
         background: url(./img/layer3.png);
         position: absolute;
         width: 100%;

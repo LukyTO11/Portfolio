@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import Form from "./Form"
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 export default function Contact(props) {
 
