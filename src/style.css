@@ -83,7 +83,7 @@ nav {
     background-attachment: fixed;
 }
 
-.background.dark{
+.background.dark {
     background-image: url(./img/test3.gif);
 }
 
@@ -555,10 +555,12 @@ main {
     color: white;
     background-color: black;
     border: 2px solid black;
+    cursor: pointer;
 }
 
-.link {
+.link{
     text-decoration: none;
+    padding-bottom: 200px;
 }
 
 /* End of Works */
@@ -567,12 +569,11 @@ main {
 
 
 .services-title {
-    margin-top: 50rem;
+    margin-top: 55rem;
     font-size: 15em;
     text-align: center;
     color: whitesmoke;
 }
-
 
 
 /* Cards */
@@ -1248,7 +1249,8 @@ footer {
         padding: 150px;
     }
 
-    .background {
+    .background,
+    .background.dark {
         background: unset;
         z-index: -1;
         min-height: 15vh;
