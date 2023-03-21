@@ -48,11 +48,11 @@ export default function About(props) {
 
     return (
             <div className={props.darkMode ? "dark" : ""} >
-                <div className="about" id="about-section" data-aos="fade-up">
-                    <h1 className="about-title">I&apos;m {" "}
+                <div className="about" id="about-section">
+                    <h1 className="about-title" data-aos="fade-up">I&apos;m {" "}
                         <span ref={typedElement} className="about-typed"></span>
                     </h1>
-                    <p className="about-text">
+                    <p className="about-text" data-aos="fade-up">
                         Hello, my nickname is Luky, a Freelance Illustrator/Animator
                         based in France. With a passion in web development.
                     </p>
