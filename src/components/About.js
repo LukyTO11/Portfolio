@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react"
 import Typed from "typed.js"
 import Form from "./Form"
 import { Link } from "react-router-dom"
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 import Gif from "../img/anim-website_test2.gif"
 import AOS from 'aos'
 import 'aos/dist/aos.css'

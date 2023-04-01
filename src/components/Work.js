@@ -23,7 +23,7 @@ export default function Work(props) {
 
     return (
         <main id="main" className={props.darkMode ? "dark" : ""} >
-            <div>
+            <div className="main">
                 <h1 className="main-title" data-aos="fade-up">MY WORK</h1>
                 <div className="grid-container">
                     <div className="grid-item1" data-aos="fade-up"></div>

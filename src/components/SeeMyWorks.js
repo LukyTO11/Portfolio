@@ -16,6 +16,7 @@ export default function SeeMyWorks() {
                     <a href="https://www.instagram.com/luky__to/" className="works-links_insta">Instagram</a>
                     <a href="https://twitter.com/Lukyto_1" className="works-links_twitter">Twitter</a>
                     <a href="https://www.tiktok.com/@lukyto_" className="works-links_tiktok">TikTok</a>
+                    <a href="https://github.com/LukyTO11" className="works-links_github">Github</a>
                 </div>
                 <Link to="/Portfolio">
                     <button className="backHome">

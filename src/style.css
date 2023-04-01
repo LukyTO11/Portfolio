@@ -229,15 +229,16 @@ ul {
 body {
     width: 100%;
     height: 100%;
-    background: url(./img/layer4.png);
+    background: url(./img/layer3.png);
 }
 
-body.dark {
+.Appdark {
     width: 100%;
     height: 100%;
     background-size: cover;
-    background: url(./img/layer3.png);
+    background: url(./img/layer4.png);
 }
+
 
 /* End of Navbar */
 
@@ -319,6 +320,7 @@ button {
     box-shadow: 0.4rem 0.4rem 0 black;
     transform: translate(-0.4rem, -0.4rem);
 }
+
 
 .btn-work:active,
 .btn-contact:active {
@@ -1064,7 +1066,8 @@ footer {
 
 .works-links_insta,
 .works-links_twitter,
-.works-links_tiktok {
+.works-links_tiktok,
+.works-links_github {
     font-weight: bold;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -1090,9 +1093,11 @@ footer {
 .works-links_insta:before,
 .works-links_twitter:before,
 .works-links_tiktok:before,
+.works-links_github:before,
 .works-links_insta:after,
 .works-links_twitter:after,
-.works-links_tiktok:after {
+.works-links_tiktok:after,
+.works-links_github:after {
     content: "";
     border-radius: inherit;
     position: absolute;
@@ -1101,7 +1106,8 @@ footer {
 
 .works-links_insta:before,
 .works-links_twitter:before,
-.works-links_tiktok:before {
+.works-links_tiktok:before,
+.works-links_github:before {
     inset: calc(var(--border-w) * -1);
     box-shadow: inset 0.0333em 0.0333em 0.2em #ca78e5, inset -0.0666em -0.0666em 0.15em #311879, inset 0.025em 0.025em 0.1em white;
     mix-blend-mode: hard-light;
@@ -1109,7 +1115,8 @@ footer {
 
 .works-links_insta:after,
 .works-links_twitter:after,
-.works-links_tiktok:after {
+.works-links_tiktok:after,
+.works-links_github:after {
     inset: 0;
     border-radius: calc(var(--border-r) - var(--border-w));
     box-shadow: -0.05em -0.05em 0.05em #311879, 0.05em 0.05em 0.05em #ca78e5;
@@ -1118,16 +1125,19 @@ footer {
 
 .works-links_insta:after,
 .works-links_twitter:after,
-.works-links_tiktok:after {
+.works-links_tiktok:after,
+.works-links_github:after {
     content: none;
 }
 
 .works-links_insta:hover,
 .works-links_twitter:hover,
 .works-links_tiktok:hover,
+.works-links_github:hover,
 .works-links_insta:focus,
 .works-links_twitter:focus,
-.works-links_tiktok:focus {
+.works-links_tiktok:focus,
+.works-links_github:focus {
     background-position: calc(100% + 1px) 50%;
     box-shadow: 0 0.15em 1.5em rgba(136, 67, 231, 0.666), 0 0.15em 0.333em -0.1em rgba(156, 28, 218, 0.666), inset 0 0.15em 0.3em -0.1em rgba(177, 67, 231, 0),
         inset 0 0 0.05em 0.0333em rgba(177, 67, 231, 0.25), inset 0 0.1em 0.666em rgba(97, 56, 216, 0.333);
@@ -1154,6 +1164,88 @@ footer {
 
 
 /* Responsive */
+
+@media (max-width:1200px) {
+    .gif-luky {
+        display: none;
+    }
+
+    .about {
+        margin-bottom: 30rem;
+    }
+
+    .grid-item1 {
+        background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
+        background-size: cover;
+        grid-column: 1/3;
+        grid-row: 1/5;
+        border: #000000;
+    }
+
+    .grid-item1:hover {
+        background: url(./img/cdv_bendejun_anim.gif) no-repeat center;
+        background-size: cover;
+        grid-column: 1/3;
+        grid-row: 1/5;
+    }
+
+    .grid-item2 {
+        background: url(./img/img_trame.png) no-repeat center;
+        background-size: cover;
+        grid-column: 3;
+        grid-row: 1/7;
+    }
+
+    .grid-item2:hover {
+        background: url(./img/anim_trames.gif) no-repeat center;
+        background-size: cover;
+        grid-column: 3;
+        grid-row: 1/7;
+    }
+
+    .grid-item3 {
+        background: url(./img/img_festival.gif) no-repeat center;
+        background-size: cover;
+        grid-column: 2;
+        grid-row: 5/10;
+    }
+
+    .grid-item3:hover {
+        background: url(./img/img_festival.gif) no-repeat center;
+        background-size: 100% 1000px;
+        grid-column: 2;
+        grid-row: 5/10;
+    }
+
+    .grid-item4 {
+        background: url(./img/ovni.png) no-repeat center;
+        background-size: cover;
+        grid-column: 1;
+        grid-row: 5/10;
+    }
+
+    .grid-item5 {
+        background: url(./img/alone.png) no-repeat top;
+        background-size: cover;
+        grid-column: 3;
+        grid-row: 7/10;
+    }
+
+    .grid-item5:hover {
+        background: url(./img/alone.png) no-repeat center lightgrey;
+        background-size: 70%;
+        grid-column: 3;
+        grid-row: 9/16;
+
+    }
+
+    .services-title {
+        margin-top: 0rem;
+        font-size: 15em;
+        text-align: center;
+        color: whitesmoke;
+    }
+}
 
 @media (max-width:1000px) {
 
@@ -1289,7 +1381,10 @@ footer {
     main {
         background-color: rgba(0, 0, 0, 0.8);
         height: 3000px;
-        overflow-y: hidden;
+    }
+
+    .main {
+        overflow: hidden;
     }
 
     .main-title {
@@ -1441,11 +1536,10 @@ footer {
     }
 
     .info-rights {
-        margin: 10px;
+        margin: 0;
         font-weight: 400;
         font-family: 'GT America Trial', sans-serif;
         font-size: 20px;
-        line-height: 30px;
         width: auto;
         color: white;
     }
@@ -1499,5 +1593,16 @@ footer {
         overflow: hidden;
     }
 
+    @media (orientation: landscape) {
+        body {
+          transform: rotate(90deg);
+          transform-origin: left top;
+          width: 100vh;
+          overflow-x: hidden;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
 
 }

@@ -8,18 +8,18 @@ import data from "./components/data";
 import Services from "./components/Services";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-
+import { useLocation } from "react-router-dom";
 
 export default function Home() {
-
-    const [darkMode, setDarkMode] = React.useState(true)
+    const [darkMode, setDarkMode] = React.useState(true);
+    const location = useLocation();
 
     function toggleDarkMode() {
-        setDarkMode(prevMode => !prevMode)
+        setDarkMode((prevMode) => !prevMode);
     }
 
     function toggleBodyClass() {
-        document.body.classList.toggle("dark")
+        document.getElementById("app").classList.toggle("dark");
     }
 
     const cards = data.map((item) => {
@@ -31,32 +31,40 @@ export default function Home() {
                 className={item.className}
                 coverImg={item.coverImg}
             />
-        )
-    })
+        );
+    });
 
     useEffect(() => {
         AOS.init({
             once: true,
             offset: 200,
             duration: 600,
-            easing: 'ease-in-out',
+            easing: "ease-in-out",
             delay: 100,
-            mirror: false
-        })
-    }, [])
+            mirror: false,
+        });
+    }, []);
+
+    useEffect(() => {
+        if (location.pathname === "/Portfolio") {
+            setDarkMode(true);
+        }
+    }, [location]);
 
     return (
-        <div>
+        <div className={darkMode ? "Appdark" : ""}>
             <Navbar
                 darkMode={darkMode}
                 toggleDarkMode={toggleDarkMode}
                 toggleBodyClass={toggleBodyClass}
             />
-            <About darkMode={darkMode}/>
+            <About darkMode={darkMode} />
             <Work darkMode={darkMode} />
-            <Services darkMode={darkMode}/>
-            <div className="cards-list" data-aos="fade-up">{cards}</div>
-            <Contact darkMode={darkMode}/>
+            <Services darkMode={darkMode} />
+            <div className="cards-list" data-aos="fade-up">
+                {cards}
+            </div>
+            <Contact darkMode={darkMode} />
         </div>
-    )
+    );
 }
