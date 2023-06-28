@@ -21,7 +21,7 @@
     "react-hook-form": "^7.43.4",
     "react-router-dom": "^6.8.2",
     "react-scripts": "^5.0.1",
-    "typed.js": "^2.0.12",
+    "typed.js": "^2.0.132",
     "web-vitals": "^2.1.4",
     "yup": "^1.0.2"
   },
