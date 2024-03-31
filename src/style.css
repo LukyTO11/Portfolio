@@ -329,9 +329,10 @@ button {
 
 .gif-luky {
     position: absolute;
-    width: 1400px;
-    right: 160px;
+    width: 30%;
+    right: 5%;
     top: 100vh;
+    height: auto;
 }
 
 
