@@ -23,7 +23,7 @@
     "react-scripts": "^5.0.1",
     "typed.js": "^2.0.12",
     "web-vitals": "^2.1.4",
-    "yup": "^1.0.2"
+    "yup": "^1.2.0"
   },
   "scripts": {
     "deploy": "npm run build && gh-pages -d build",
